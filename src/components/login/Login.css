@@ -1,0 +1,36 @@
+.login-container{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+}
+
+.form-container{
+    margin: 0 auto;
+    width: 60%;
+}
+.input-element{
+    width: 50%;
+}
+.login-form{
+    padding: 5%;
+    background: #F1F3F9;
+    box-shadow: 0 5px 8px 0;
+}
+.login-form h3{
+    text-align: center;
+    color: #02195E;
+}
+.form-group{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.login-container form{
+    padding: 5%;
+}
+.login-form .forgot-password, .error{
+    color: #02195E;
+    font-weight: 600;
+}
+.login-error{
+    color: #bd1c37;
+    font-weight: 600;
+}

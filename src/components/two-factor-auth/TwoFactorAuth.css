@@ -1,0 +1,28 @@
+.two-factor-auth-container{
+    margin-top: 5%; 
+    margin-bottom: 5%;
+}
+
+.form-container{
+    margin: 0 auto;
+    width: 60%;
+}
+.input-element{
+    width: 50%;
+}
+.two-factor-auth-form{
+    padding: 5%;
+    background: #F1F3F9;
+    box-shadow: 0 5px 8px 0;
+}
+.two-factor-auth-form h3{
+    text-align: center;
+    color: #02195E;
+}
+.form-group{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.two-factor-auth-container form{
+    padding: 5%;
+}
