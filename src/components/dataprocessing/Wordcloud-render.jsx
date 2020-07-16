@@ -34,7 +34,7 @@ export const WordCloudGenerate = () => {
         .catch(error => console.log(error))
     //console.log('data',dataSource)
 
-    var dataSourceJSONFormat = [];
+
     var dataSourceJSONFormat1 = [];
     dataSource.forEach(myFunction);
 
@@ -44,14 +44,7 @@ export const WordCloudGenerate = () => {
         object.value =  array[index][1];
 
         dataSourceJSONFormat1.push(object);
-        const element = [];
-        var text = "text"+":"+array[index][0];
-        text = JSON.stringify(text);
-        element.push(text);
-        var valueText = "value"+":"+array[index][1];
-        valueText = JSON.stringify(valueText);
-        element.push(valueText);
-        dataSourceJSONFormat.push(element);
+
     }
    // console.log(dataSourceJSONFormat);
     console.log(dataSourceJSONFormat1);
