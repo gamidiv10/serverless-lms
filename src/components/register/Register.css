@@ -1,31 +1,38 @@
-.register-container{
-    margin-top: 5%; 
+.register-container {
+    margin-top: 5%;
     margin-bottom: 5%;
 }
-.form-container{
+
+.form-container {
     margin: 0 auto;
     width: 60%;
 }
-.form-group{
+
+.form-group {
     margin: 0 auto;
     margin-bottom: 1rem;
 }
-.input-element{
+
+.input-element {
     width: 50%;
 }
-.register-form{
+
+.register-form {
     padding: 5%;
     background: #F1F3F9;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
 }
-.register-form h3{
+
+.register-form h3 {
     text-align: center;
     color: #02195E;
 }
-.register-container form{
+
+.register-container form {
     padding: 5%;
 }
-.reg-error{
+
+.reg-error {
     color: #bd1c37;
     font-weight: 600;
 }
