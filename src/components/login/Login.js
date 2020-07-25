@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './Login.css'
 import { useHistory } from 'react-router-dom'
 
@@ -14,6 +14,15 @@ export const Login = () => {
     const [emailError, setEmailError] = useState("");
     const [pwdError, setPwdError] = useState("");
     const [answerError, setAnswerError] = useState("");
+    const [loginError, setloginError] = useState("");
+    const [sanswerError, setSanswerError] = useState("");
+
+    useEffect(() => {
+        console.log(localStorage.getItem("lmstoken"));
+        if (localStorage.getItem("lmstoken") !== null) {
+            history.push('/homepage')
+        }
+    }, [history]);
 
 
 
@@ -48,7 +57,12 @@ export const Login = () => {
                         localStorage.setItem('tempToken', data1.token);
                         setQuestion(data1.question);
                         setShowQ(true);
+                        setloginError("");
                         console.log("true");
+                    }
+                    else {
+                        console.log(data1)
+                        setloginError("Invalid username/password");
                     }
                 })
                 .catch((error) => {
@@ -66,7 +80,7 @@ export const Login = () => {
         if (!errorStatus) {
             var data = { "email": email, "answer": answer }
             console.log(data)
-            fetch('https://cors-anywhere.herokuapp.com/https://7i8s18cx16.execute-api.us-east-1.amazonaws.com/default/securityAnswerValidation', {
+            fetch('https://cors-anywhere.herokuapp.com/https://3ypjbrrd5j.execute-api.us-east-1.amazonaws.com/default/securityAnswerValidation', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -82,10 +96,16 @@ export const Login = () => {
                     if (data1.status) {
                         console.log("Logged in successfully");
                         console.log(localStorage.getItem("tempToken"));
+                        setSanswerError("");
                         localStorage.setItem("lmstoken", localStorage.getItem("tempToken"));
                         localStorage.setItem("role", data1.role)
                         localStorage.setItem("email", email)
                         localStorage.removeItem("tempToken");
+                        history.push('/homepage')
+                    }
+                    else {
+                        console.log(data1)
+                        setSanswerError("Invalid security answer")
                     }
                 })
                 .catch((error) => {
@@ -149,6 +169,12 @@ export const Login = () => {
                                 <h4>{question}</h4>
                                 <input type="text" className="form-control" onChange={handleAnswer} placeholder="Security Answer" required />
                                 <p className="reg-error">{answerError}</p>
+                            </div>
+                            <div className="form-group input-element">
+                                <p className="reg-error">{loginError}</p>
+                            </div>
+                            <div className="form-group input-element">
+                                <p className="reg-error">{sanswerError}</p>
                             </div>
                             <div className="form-group" style={{ display: !showQ ? 'block' : 'none' }}>
                                 <button className="btn btn-success" onClick={handleLoginClick} type="submit">Login</button>

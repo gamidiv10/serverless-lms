@@ -211,7 +211,7 @@ export const Register = () => {
                             <div className="form-group input-element">
                                 <select name="securityQuestion" id="securityQuestion" className="form-control" onChange={handleSecurityQuestion} placeholder="SecurityQuestion" required >
                                     <option value="" disabled selected hidden>Security Question</option>
-                                    <option value="What is favourite sport?">What is your favourite sport?</option>
+                                    <option value="What is your favourite sport?">What is your favourite sport?</option>
                                     <option value="Where did you pursue your high school?">Where did you pursue your high school?</option>
                                     <option value="What is your pet name?">What is your pet name?</option>
                                     <option value="What is the name of your sibling?">What is the name of your sibling?</option>
