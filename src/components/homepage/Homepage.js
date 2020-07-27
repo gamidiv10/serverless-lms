@@ -5,11 +5,10 @@ import { Redirect } from "react-router-dom";
 export const Homepage = () => {
   const history = useHistory();
 
-
   useEffect(() => {
     console.log(localStorage.getItem("lmstoken"));
     if (localStorage.getItem("lmstoken") === null) {
-      history.push('/')
+      history.push("/");
     }
   }, [history]);
 
@@ -109,7 +108,7 @@ export const Homepage = () => {
           style={{ marginTop: "20px" }}
           onClick={handleWordCloud}
         >
-          (Data processing) Analytics-1 (Generate word cloud)
+          Data processing (Generate word cloud)
         </button>
       </div>
       <div>
@@ -118,8 +117,8 @@ export const Homepage = () => {
           style={{ marginTop: "20px" }}
           onClick={handleMLAnalytics}
         >
-          (ML File Clustering) Analytics-2
-            </button>
+          (ML File Clustering) Analysis-1
+        </button>
       </div>
     </div>
   );
