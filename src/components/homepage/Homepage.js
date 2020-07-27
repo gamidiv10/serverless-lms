@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Homepage.css";
 import { useHistory } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 export const Homepage = () => {
   const history = useHistory();
+
+
+  useEffect(() => {
+    console.log(localStorage.getItem("lmstoken"));
+    if (localStorage.getItem("lmstoken") === null) {
+      history.push('/')
+    }
+  }, [history]);
 
   const handleSecurityLoginClick = (e) => {
     e.preventDefault();
@@ -50,8 +58,8 @@ export const Homepage = () => {
     history.push("/word-cloud");
   };
 
-  const handleMLAnalytics=()=>{
-      history.push("/fileCluster");
+  const handleMLAnalytics = () => {
+    history.push("/fileCluster");
   };
   return (
     <div className="homepage-div">
@@ -104,15 +112,15 @@ export const Homepage = () => {
           (Data processing) Analytics-1 (Generate word cloud)
         </button>
       </div>
-        <div>
-            <button
-                className="btn btn-primary"
-                style={{ marginTop: "20px" }}
-                onClick={handleMLAnalytics}
-            >
-                (ML File Clustering) Analytics-2
+      <div>
+        <button
+          className="btn btn-primary"
+          style={{ marginTop: "20px" }}
+          onClick={handleMLAnalytics}
+        >
+          (ML File Clustering) Analytics-2
             </button>
-        </div>
+      </div>
     </div>
   );
 };

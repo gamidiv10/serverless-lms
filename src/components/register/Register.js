@@ -21,6 +21,8 @@ export const Register = () => {
     const [securityAnswer, setSecurityAnswer] = useState("");
     const [securityAnswerError, setSecurityAnswerError] = useState("");
     const history = useHistory();
+    const emailRegex = new RegExp("^[^@]+@[^@]+\\.[^@]+$");
+    const [signUpError, setSignUpError] = useState("");
 
 
     const handleFirstName = (e) => {
@@ -48,6 +50,9 @@ export const Register = () => {
         e.preventDefault();
         if (e.target.value === "") {
             setEmailError("Email Field Should not be Empty");
+        }
+        else if (!emailRegex.test(e.target.value)) {
+            setEmailError("Invalid email");
         }
         else {
             setEmailError("")
@@ -164,12 +169,20 @@ export const Register = () => {
                 .then(response => response.json())
                 .then(data1 => {
                     console.log('Success:', data1);
+                    if (data1.status) {
+                        console.log('Success:', data1);
+                        setSignUpError("");
+                        history.push('/');
+                    }
+                    else {
+                        setSignUpError("User already exist");
+                    }
                 })
                 .catch((error) => {
                     console.error('Error:', error);
                 });
 
-            history.push('/')
+
         }
 
     }
@@ -180,6 +193,7 @@ export const Register = () => {
                     <div className="register-form">
                         <h3>Learning Management System</h3>
                         <form>
+
                             <div className="form-group input-element">
                                 <input type="text" className="form-control" onChange={handleFirstName} placeholder="First Name" required />
                                 <p className="reg-error">{firstNameError}</p>
@@ -221,6 +235,9 @@ export const Register = () => {
                             <div className="form-group input-element">
                                 <input type="text" className="form-control" onChange={handleSecurityAnswer} placeholder="Security answer" required />
                                 <p className="reg-error">{securityAnswerError}</p>
+                            </div>
+                            <div className="form-group input-element">
+                                <p className="reg-error">{signUpError}</p>
                             </div>
                             <div className="form-group">
                                 <button className="btn btn-success" type="submit" onClick={handleSubmit}>Register</button>
