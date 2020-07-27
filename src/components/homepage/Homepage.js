@@ -43,11 +43,15 @@ export const Homepage = () => {
   const handleChat = () => {
     window.location.replace("http://serverless-961.uc.r.appspot.com/");
   };
-  const handleDataProcessing = () => {
+  const uploadFile = () => {
     history.push("/uploadFile");
   };
   const handleWordCloud = () => {
     history.push("/word-cloud");
+  };
+
+  const handleMLAnalytics=()=>{
+      history.push("/fileCluster");
   };
   return (
     <div className="homepage-div">
@@ -86,9 +90,9 @@ export const Homepage = () => {
         <button
           className="btn btn-primary"
           style={{ marginTop: "20px" }}
-          onClick={handleDataProcessing}
+          onClick={uploadFile}
         >
-          Data Processing
+          Upload Files
         </button>
       </div>
       <div>
@@ -97,9 +101,18 @@ export const Homepage = () => {
           style={{ marginTop: "20px" }}
           onClick={handleWordCloud}
         >
-          Analysis-1
+          (Data processing) Analytics-1 (Generate word cloud)
         </button>
       </div>
+        <div>
+            <button
+                className="btn btn-primary"
+                style={{ marginTop: "20px" }}
+                onClick={handleMLAnalytics}
+            >
+                (ML File Clustering) Analytics-2
+            </button>
+        </div>
     </div>
   );
 };
