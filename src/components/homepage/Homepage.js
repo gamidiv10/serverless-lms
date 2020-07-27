@@ -40,6 +40,15 @@ export const Homepage = () => {
   const handleOnlineSupport = () => {
     window.location.replace("https://dev.d2a7fvbkjvlcpa.amplifyapp.com/");
   };
+  const handleChat = () => {
+    window.location.replace("http://serverless-961.uc.r.appspot.com/");
+  };
+  const handleDataProcessing = () => {
+    history.push("/uploadFile");
+  };
+  const handleWordCloud = () => {
+    history.push("/word-cloud");
+  };
   return (
     <div className="homepage-div">
       <nav className="navbar navbar-dark bg-dark justify-content-between">
@@ -62,6 +71,33 @@ export const Homepage = () => {
           onClick={handleOnlineSupport}
         >
           Online Support
+        </button>
+      </div>
+      <div>
+        <button
+          className="btn btn-primary"
+          style={{ marginTop: "20px" }}
+          onClick={handleChat}
+        >
+          Chat Module
+        </button>
+      </div>
+      <div>
+        <button
+          className="btn btn-primary"
+          style={{ marginTop: "20px" }}
+          onClick={handleDataProcessing}
+        >
+          Data Processing
+        </button>
+      </div>
+      <div>
+        <button
+          className="btn btn-primary"
+          style={{ marginTop: "20px" }}
+          onClick={handleWordCloud}
+        >
+          Analysis-1
         </button>
       </div>
     </div>
