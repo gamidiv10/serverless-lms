@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>Pub Sub Application</title>
+
+  <h2 style="color:#574f4c">Chat Module</h2>
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='chat_styles.css')}}">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+       $(document).ready(function(){
+           var socket = io.connect();
+
+           socket.on('connect', function() {
+               socket.emit('am up', {data: 'I\'m connected!'});
+           });
+
+           socket.on('update messages', function(message) {
+               $("#messagesList").append('<li>'+message+'</li>');
+           });
+           socket.on('delete messages', function(message) {
+               $("#messagesList").empty();
+           });
+       });
+   </script>
+
+</head>
+<body>
+<div>
+  <p style="font-weight: bold">Messages:</p>
+  <ul id="messagesList">
+    {% for message in messages: %}
+      <li>{{message}}</li>
+    {% endfor %}
+  </ul>
+</div>
+<form method="post">
+  <textarea name="payload" placeholder="Enter message here..."></textarea>
+  <input type="submit" value="Send">
+</form>
+</body>
+</html>

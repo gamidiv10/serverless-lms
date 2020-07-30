@@ -1,0 +1,66 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-onlineassistant-dev-204529-authRole",
+			"UnauthRoleArn": "arn:aws:iam::714945334414:role/amplify-onlineassistant-dev-204529-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::714945334414:role/amplify-onlineassistant-dev-204529-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-onlineassistant-dev-204529-deployment",
+			"UnauthRoleName": "amplify-onlineassistant-dev-204529-unauthRole",
+			"StackName": "amplify-onlineassistant-dev-204529",
+			"StackId": "arn:aws:cloudformation:us-east-1:714945334414:stack/amplify-onlineassistant-dev-204529/c5dee120-c499-11ea-96b1-0ed5356bca17",
+			"AmplifyAppId": "d2a7fvbkjvlcpa"
+		}
+	},
+	"auth": {
+		"cognito196fef07": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-onlineassistant-dev-204529-deployment/amplify-cfn-templates/auth/cognito196fef07-cloudformation-template.yml",
+				"logicalId": "authcognito196fef07"
+			},
+			"lastPushTimeStamp": "2020-07-13T01:38:00.868Z",
+			"output": {
+				"IdentityPoolId": "us-east-1:6cfb00ac-248f-4016-8f11-77ca745adb4e",
+				"IdentityPoolName": "onlineassistant_identitypool_5e33b752__dev"
+			},
+			"lastPushDirHash": "p2OZAsby0U+IzNFX0LuA92Tioxs="
+		}
+	},
+	"interactions": {
+		"onlineAssistant": {
+			"service": "Lex",
+			"providerPlugin": "awscloudformation",
+			"build": true,
+			"lastBuildTimeStamp": "2020-07-13T00:50:50.295Z",
+			"lastPackageTimeStamp": "2020-07-13T00:50:50.336Z",
+			"distZipFilename": "onlineAssistant-6e32302b5a2b67566e75-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-onlineassistant-dev-204529-deployment/amplify-cfn-templates/interactions/onlineAssistant-cloudformation-template.json",
+				"logicalId": "interactionsonlineAssistant"
+			},
+			"lastPushTimeStamp": "2020-07-13T01:38:00.869Z",
+			"output": {
+				"FunctionArn": "arn:aws:lambda:us-east-1:714945334414:function:onlineassistant_cfnlambda_0bf0aeed-dev",
+				"Region": "us-east-1",
+				"BotName": "onlineAssistantC_dev"
+			},
+			"lastPushDirHash": "8D7Ta58T81bYGPTud9hr8u4wh5g="
+		}
+	},
+	"hosting": {
+		"amplifyhosting": {
+			"service": "amplifyhosting",
+			"providerPlugin": "awscloudformation",
+			"type": "manual",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-onlineassistant-dev-204529-deployment/amplify-cfn-templates/hosting/amplifyhosting-template.json",
+				"logicalId": "hostingamplifyhosting"
+			},
+			"lastPushTimeStamp": "2020-07-13T01:38:00.871Z",
+			"output": {},
+			"lastPushDirHash": "/+VZ33seFFqAr6wbtptwbINUfSA="
+		}
+	}
+}
