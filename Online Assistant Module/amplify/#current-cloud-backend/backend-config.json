@@ -1,0 +1,22 @@
+{
+    "auth": {
+        "cognito196fef07": {
+            "service": "Cognito",
+            "providerPlugin": "awscloudformation"
+        }
+    },
+    "interactions": {
+        "onlineAssistant": {
+            "service": "Lex",
+            "providerPlugin": "awscloudformation",
+            "build": true
+        }
+    },
+    "hosting": {
+        "amplifyhosting": {
+            "service": "amplifyhosting",
+            "providerPlugin": "awscloudformation",
+            "type": "manual"
+        }
+    }
+}
