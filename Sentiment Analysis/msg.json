@@ -1,0 +1,12 @@
+{
+    "1": "Hi, can someone help me with a question about serverless?",
+    "2": "Yes, what question do you have?",
+    "3": "I would like to know how lambda functions work.",
+    "4": "Sure, lambda is a serverless compute service that runs your code in response to events.",
+    "5": "The advantage of lambda functions is that it automatically manages the compute resource and you only pay for what you use.",
+    "6": "Oh, I see. And which programming languages are supported?",
+    "7": "Python, NodeJS, Java, Ruby among others...",
+    "8": "Thank you all for your help. Things are much clearer now.",
+    "9": "No problem.",
+    "10": "Glad to help."
+}

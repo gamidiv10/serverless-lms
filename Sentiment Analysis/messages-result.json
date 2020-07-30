@@ -1,0 +1,112 @@
+[
+    {
+        "Index": 0,
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.017445936799049377,
+            "Negative": 0.021950077265501022,
+            "Neutral": 0.9605982899665833,
+            "Mixed": 5.760978638136294e-06
+        },
+        "message": "How are you doing?"
+    },
+    {
+        "Index": 1,
+        "Sentiment": "POSITIVE",
+        "SentimentScore": {
+            "Positive": 0.9773730039596558,
+            "Negative": 0.0018544484628364444,
+            "Neutral": 0.020764263346791267,
+            "Mixed": 8.27035000838805e-06
+        },
+        "message": "I am doing great."
+    },
+    {
+        "Index": 2,
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.02912597917020321,
+            "Negative": 0.3396908938884735,
+            "Neutral": 0.6309778094291687,
+            "Mixed": 0.00020530134497676045
+        },
+        "message": "How is work?"
+    },
+    {
+        "Index": 3,
+        "Sentiment": "NEGATIVE",
+        "SentimentScore": {
+            "Positive": 6.389813643181697e-05,
+            "Negative": 0.9987019300460815,
+            "Neutral": 0.0012337056687101722,
+            "Mixed": 3.9018522102196584e-07
+        },
+        "message": "It is terrible these days"
+    },
+    {
+        "Index": 4,
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.11982551962137222,
+            "Negative": 0.00672035152092576,
+            "Neutral": 0.8734508752822876,
+            "Mixed": 3.1856855002843076e-06
+        },
+        "message": "I am going to europe this weekend"
+    },
+    {
+        "Index": 5,
+        "Sentiment": "POSITIVE",
+        "SentimentScore": {
+            "Positive": 0.9804147481918335,
+            "Negative": 0.003104412229731679,
+            "Neutral": 0.0164136104285717,
+            "Mixed": 6.719764496665448e-05
+        },
+        "message": "Really?, thats awesome"
+    },
+    {
+        "Index": 6,
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.18733429908752441,
+            "Negative": 0.010860181413590908,
+            "Neutral": 0.8018024563789368,
+            "Mixed": 3.0406338282773504e-06
+        },
+        "message": "I wonder when I will go there"
+    },
+    {
+        "Index": 7,
+        "Sentiment": "POSITIVE",
+        "SentimentScore": {
+            "Positive": 0.7950652837753296,
+            "Negative": 0.0005100658163428307,
+            "Neutral": 0.20442233979701996,
+            "Mixed": 2.3314105419558473e-06
+        },
+        "message": "You should go this year"
+    },
+    {
+        "Index": 8,
+        "Sentiment": "NEGATIVE",
+        "SentimentScore": {
+            "Positive": 0.0008934640791267157,
+            "Negative": 0.8887218236923218,
+            "Neutral": 0.11038316786289215,
+            "Mixed": 1.547101874166401e-06
+        },
+        "message": "With the pandemic situation, I think thats a bad idea"
+    },
+    {
+        "Index": 9,
+        "Sentiment": "NEUTRAL",
+        "SentimentScore": {
+            "Positive": 0.17523640394210815,
+            "Negative": 0.09248420596122742,
+            "Neutral": 0.7313945889472961,
+            "Mixed": 0.0008848363067954779
+        },
+        "message": "yeah, thats true"
+    }
+]
