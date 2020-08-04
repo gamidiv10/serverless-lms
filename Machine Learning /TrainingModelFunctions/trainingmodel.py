@@ -1,6 +1,6 @@
 #Author (/ Modifier) : Parth Panchal
 # listing files from the bucket "https://hackersandslackers.com/manage-files-in-google-cloud-storage-with-python/"
-# Upload the file to bucket Credit: TA  Alapati Manjari (Lab 8 Server)
+# Upload the file to bucket Credit: TA  Alapati Manjari (Lab 8 Serverless Data processing)
 #  SKLearn Training Logic Credit : Python programming blog (Source : https://pythonprogramminglanguage.com/kmeans-text-clustering/)
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
