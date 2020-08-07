@@ -1,3 +1,37 @@
+# Project - Learning Management System - Group 6
+
+## Authors
+
+** [Amelia Hernandez Beltran](B00847961); 
+   [Parth Pankajbhai Panchal](B00845025); 
+   [Thanigaiselvan Senthil Shanmugam](B00798284); 
+   [Vamsi Gamidi](B00834696);**
+
+## Getting Started
+
+The company DALSoft5410 wants to build a solution is a Learning Management System (LMS) called DALServerlessLMS based in serverless technologies using a multi-cloud deployment model and backend-as-a-service (BaaS). DALSoft5410 wants to use a serverless solution because it does not have the sufficient resources for an on-premises solution. AWS and GCP are the cloud provider's selected by the company for building, testing, and deploying the solution. The application will provide instructors and students with a platform with the following features:
+•	User management module: for sign up validation, managing and storing user details
+•	Authentication module: for user multifactor authentication logic
+•	Online support module: to provide an online virtual assistance, which can respond to questions from users
+•	Chat Module: to discuss about general topics with all the users within the organization
+•	Data processing module: to extract named entities from files in the LMS and build a word cloud
+•	Machine learning module: to identify the classification of the file and add appropriate tags
+•	Analysis 2 module: to identify the sentiment analysis of the chat messages from the Chat module
+•	Web application: front-end application that calls the backend services
+
+The project uses the React Js  web framework for the front end and backend was developed using the various cloud services provided by AWS and GCP
+
+The backend codes are available in the the following folders
+
+•	Chat Module
+•	Data Processing
+•	Machine Learning
+•	Online Assistant Module
+•	Sentiment Analysis
+•	User Management and Authentication
+
+## Testing the web application
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -37,32 +71,4 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
