@@ -3,7 +3,7 @@
 ## Authors
 
 ** [Amelia Hernandez Beltran](B00847961); 
-   [Parth Pankajbhai Panchal](B00845025); 
+   [Parth Pankajbhai Panchal](https://github.com/parthpan7); 
    [Thanigaiselvan Senthil Shanmugam](B00798284); 
    [Vamsi Gamidi](B00834696);**
 
